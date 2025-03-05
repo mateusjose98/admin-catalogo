@@ -3,7 +3,7 @@
 Sistema que gerencia os vídeos, incluindo as categorias, gêneros e elenco.
 
 ---
-Sobre a organização do domínio com DDD:
+Sobre a organização do domínio com Clean Archtecture + DDD:
 
 - Aggregate Root é uma Entidade.
 - Entidade tem um Identificador.

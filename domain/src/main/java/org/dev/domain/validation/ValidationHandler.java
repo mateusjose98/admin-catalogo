@@ -8,8 +8,6 @@ public interface ValidationHandler {
 
     ValidationHandler append(ValidationHandler anHandler);
 
-    <T> T validate(Validation<T> aValidation);
-
     List<Problem> getProblems();
 
     default boolean hasProblem() {
@@ -27,4 +25,8 @@ public interface ValidationHandler {
     interface Validation<T> {
         T validate();
     }
+
+    <T> T validate(Validation<T> aValidation);
+
+
 }

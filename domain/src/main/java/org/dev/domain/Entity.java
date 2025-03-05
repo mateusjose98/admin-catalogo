@@ -2,13 +2,14 @@ package org.dev.domain;
 
 import org.dev.domain.events.DomainEvent;
 import org.dev.domain.events.DomainEventPublisher;
+import org.dev.domain.validation.ValidationHandler;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-public class Entity<ID extends Identifier> {
+public abstract  class Entity<ID extends Identifier> {
 
     protected final ID id;
     private final List<DomainEvent> domainEvents;
@@ -16,6 +17,8 @@ public class Entity<ID extends Identifier> {
     protected Entity(final ID id) {
         this(id, null);
     }
+
+    public abstract void validate(ValidationHandler handler);
 
     protected Entity(final ID id, final List<DomainEvent> domainEvents) {
         Objects.requireNonNull(id, "'id' should not be null");
