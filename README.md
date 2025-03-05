@@ -1,9 +1,10 @@
 # Microserviço de Administração de Catálogo de Vídeos
 
 Sistema que gerencia os vídeos, incluindo as categorias, gêneros e elenco.
+Módulos gradle: domain, application, infrastructure
 
 ---
-Sobre a organização do domínio com Clean Archtecture + DDD:
+*Sobre a organização do domínio*:
 
 - Aggregate Root é uma Entidade.
 - Entidade tem um Identificador.
@@ -25,3 +26,13 @@ Regras de valudação [Gênero]:
 - Nome - preenchimento obrigatório
 - Relação com [Categoria] N-N. Aqui a recomendação é fazer a lidação apenas com o ID, para evitar concorrência entre os agregates;
 - Ativar/Inativar
+
+
+---
+*Camada de Aplicação* 
+
+Os casos de uso tem o papel de orquestar o comportamento das entidades e as chamadas de validação.
+
+Tipos de caso de uso base: classes abstratas que carregam em seu nome a sua intenção e têm um método público `execute`
+
+![img_1.png](img_1.png)
