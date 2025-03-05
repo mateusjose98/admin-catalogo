@@ -16,7 +16,7 @@ public interface ValidationHandler {
 
     default Problem firstProblem() {
         if (getProblems() != null && !getProblems().isEmpty()) {
-            return getProblems().getFirst();
+            return getProblems().get(0);
         } else {
             return null;
         }

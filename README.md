@@ -36,3 +36,9 @@ Os casos de uso tem o papel de orquestar o comportamento das entidades e as cham
 Tipos de caso de uso base: classes abstratas que carregam em seu nome a sua intenção e têm um método público `execute`
 
 ![img_1.png](img_1.png)
+
+*Camada de Infraestrutura*
+
+Framework, Gateways, Presenters, DB
+
+![img_2.png](img_2.png)
