@@ -28,6 +28,7 @@ public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
     }
 
     private Either<Notification, CreateCategoryOutput> create(final Category aCategory) {
+        // try catch
         return Try(() -> this.categoryGateway.create(aCategory))
                 .toEither()
                 .bimap(Notification::create, CreateCategoryOutput::from);
