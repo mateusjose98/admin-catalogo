@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class CategoryTest {
 
+
     @Test
     public void givenAValidParams_whenCallNewCategory_thenInstantiateACategory() {
         final var expectedName = "Filmes";
