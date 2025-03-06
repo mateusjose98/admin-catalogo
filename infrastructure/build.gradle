@@ -29,6 +29,7 @@ bootJar {
 
 
 dependencies {
+    implementation 'io.vavr:vavr:0.10.4' // remover
     implementation(project(":domain"))
     implementation(project(":application"))
     implementation('mysql:mysql-connector-java')

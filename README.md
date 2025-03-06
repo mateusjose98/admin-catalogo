@@ -11,7 +11,7 @@ Módulos gradle: domain, application, infrastructure
 - Aggregate Root tem outras Entidades e Value Objects.
 - Value Object não tem identidade e pertence a uma Entidade.
 - As entidades sabem se validar. Cada agregate tem uma classe de validação `([Entidade]Validator.java)`  com as devidas regras e acumula um ou vários 'Problem's. Dependendo do tipo de Handler, o Problem pode lançar uma exceção ou ser acumulado para tratamento posterior.
-![img.png](img.png)
+![img.png](img/img.png)
 
 
 Regras de validação [Categoria]:
@@ -35,10 +35,10 @@ Os casos de uso tem o papel de orquestar o comportamento das entidades e as cham
 
 Tipos de caso de uso base: classes abstratas que carregam em seu nome a sua intenção e têm um método público `execute`
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 *Camada de Infraestrutura*
 
 Framework, Gateways, Presenters, DB
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
