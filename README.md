@@ -1,7 +1,18 @@
 # Microserviço de Administração de Catálogo de Vídeos
 
 Sistema que gerencia os vídeos, incluindo as categorias, gêneros e elenco.
-Módulos gradle: domain, application, infrastructure
+
+Módulos gradle: domain, application, infrastructure.
+
+- domain         --> contém as regras de negócio mais puras e as entities que modelam isso;
+- application    --> contém os casos de uso, chamadas para validação e orquestraçãoda lógica;
+- infrastructure --> contém as camadas mais externas, configurações, qualquer comunicação com o mundo exterior;
+
+O código seguiu a prática do TDD com testes de unidade na camada de domínio, 
+passando por testes sliced e integrados na camada de application e terminando com e2e onde necessário.
+
+*Clean Archtecture*
+![img.png](img.png)
 
 ---
 *Sobre a organização do domínio*:
