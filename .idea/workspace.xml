@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="86f86f2a-1e9c-4620-a4bb-ccdc36b622a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/controllers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/E2ETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/JacksonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/api/CategoryAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CategoryListResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CategoryResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CreateCategoryRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/UpdateCategoryRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/category/CategoryE2ETest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/json/Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/json/Json.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/infrastructure">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/domain">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/application">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mateusjose98&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:mateusjose98/admin-catalogo.git&quot;,
+    &quot;accountId&quot;: &quot;a14bced5-233c-4bf0-b51d-d47ad604ac64&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2trMwYyTCMwLqHodQKB1Llxkug6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build admin-catalogo.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryAPITest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryAPITest.givenACommandWithInvalidID_whenCallsUpdateCategory_shouldReturnNotFoundException.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CategoryAPITest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnNotification.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryAPITest.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryE2ETest.testWorks.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMySQLGateway.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMySQLGatewayTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMySQLGatewayTest.givenAValidCategory_whenCallsCreate_shouldReturnANewCategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAValidCategory_whenCallUpdate_thenReturnCategoryUpdated.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenNonExistentFileName_whenAttemptFileOpen_thenNullPointerException.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCategoryUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreTest.givenAnActiveGenre_whenCallDeactivate_shouldReceiveOK.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetCategoryByIdUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetCategoryByIdUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetCategoryByIdUseCaseTest.givenAValidId_whenCallsGetCategory_shouldReturnCategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListCategoriesUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListCategoriesUseCaseIT.givenAValidSortAndDirection_whenCallsListCategories_thenShouldReturnCategoriesOrdered.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListCategoriesUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'admin-catalogo.application.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'admin-catalogo.domain.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'admin-catalogo.infrastructure.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.application'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.domain'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.infrastructure'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.infrastructure.application.category'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.infrastructure.category.models'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseTest.givenAValidInactivateCommand_whenCallsUpdateCategory_shouldReturnInactiveCategoryId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [:org.dev.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [flywayClean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [flywayMigrate].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [flywayRepair].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:application [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:domain [:domain:org.dev.domain.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:domain [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [:infrastructure:org.dev.infrastructure.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [build].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josem/Downloads/demo (1)/demo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\main\resources" />
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\main\resources\db\migration" />
+      <recent name="C:\Users\josem\IdeaProjects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\img" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.dev.infrastructure" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues">
+    <configuration name="CategoryAPITest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;org.dev.infrastructure.api.CategoryAPITest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;org.dev.infrastructure.e2e.category.CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CategoryE2ETest.testWorks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;org.dev.infrastructure.e2e.category.CategoryE2ETest.testWorks&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'org.dev.infrastructure'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;org.dev.infrastructure.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'org.dev.infrastructure.category.models'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;org.dev.infrastructure.category.models.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues" />
+        <item itemvalue="Gradle.CategoryE2ETest.testWorks" />
+        <item itemvalue="Gradle.Tests in 'org.dev.infrastructure'" />
+        <item itemvalue="Gradle.Tests in 'org.dev.infrastructure.category.models'" />
+        <item itemvalue="Gradle.CategoryAPITest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86f86f2a-1e9c-4620-a4bb-ccdc36b622a1" name="Changes" comment="" />
+      <created>1741105983295</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741105983295</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/org/dev/domain/exception/NotFoundException.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/application/src/main/java/org/dev/application/category/update/DefaultUpdateCategoryUseCase.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

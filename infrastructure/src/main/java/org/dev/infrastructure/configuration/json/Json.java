@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.util.StdDateFormat;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.module.afterburner.AfterburnerModule;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 import java.util.concurrent.Callable;
@@ -37,13 +38,13 @@ public enum Json {
             .propertyNamingStrategy(PropertyNamingStrategies.SNAKE_CASE)
             .build();
 
-//    private AfterburnerModule afterburnerModule() {
-//        var module = new AfterburnerModule();
-//        // make Afterburner generate bytecode only for public getters/setter and fields
-//        // without this, Java 9+ complains of "Illegal reflective access"
-//        module.setUseValueClassLoader(false);
-//        return module;
-//    }
+    private AfterburnerModule afterburnerModule() {
+        var module = new AfterburnerModule();
+        // make Afterburner generate bytecode only for public getters/setter and fields
+        // without this, Java 9+ complains of "Illegal reflective access"
+        module.setUseValueClassLoader(false);
+        return module;
+    }
 
     private static <T> T invoke(final Callable<T> callable) {
         try {
