@@ -1,4 +1,4 @@
-package org.dev.application.retrieve.list;
+package org.dev.application.category.retrieve.list;
 
 import org.dev.application.UseCaseTest;
 import org.dev.application.category.retrieve.list.CategoryListOutput;

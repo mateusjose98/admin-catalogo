@@ -1,4 +1,4 @@
-package org.dev.application.retrieve.get;
+package org.dev.application.category.retrieve.get;
 
 import org.dev.application.UseCaseTest;
 import org.dev.application.category.retrieve.get.DefaultGetCategoryByIdUseCase;

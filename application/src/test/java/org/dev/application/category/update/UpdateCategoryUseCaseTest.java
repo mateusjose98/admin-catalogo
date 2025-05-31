@@ -1,4 +1,4 @@
-package org.dev.application.update;
+package org.dev.application.category.update;
 
 import org.dev.application.UseCaseTest;
 import org.dev.application.category.update.DefaultUpdateCategoryUseCase;

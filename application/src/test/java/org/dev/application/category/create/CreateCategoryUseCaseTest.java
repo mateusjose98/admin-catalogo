@@ -1,4 +1,4 @@
-package org.dev.application.create;
+package org.dev.application.category.create;
 
 import org.dev.application.UseCaseTest;
 import org.dev.application.category.create.CreateCategoryCommand;

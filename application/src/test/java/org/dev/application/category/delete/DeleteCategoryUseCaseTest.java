@@ -1,4 +1,4 @@
-package org.dev.application.delete;
+package org.dev.application.category.delete;
 
 import org.dev.application.UseCaseTest;
 import org.dev.application.category.delete.DefaultDeleteCategoryUseCase;
