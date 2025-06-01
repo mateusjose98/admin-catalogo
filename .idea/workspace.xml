@@ -5,39 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f86f2a-1e9c-4620-a4bb-ccdc36b622a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/GenreAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/controllers/GenreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/usecases/GenreUseCaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/GenreMySQLGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/models/CreateGenreRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/models/GenreListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/models/GenreResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/models/UpdateGenreRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/persistence/GenreCategoryID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/persistence/GenreCategoryJpaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/persistence/GenreJpaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/persistence/GenreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/genre/presenters/GenreApiPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/U2__Create_Genre_Aggregate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__Create_Genre_Aggregate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/api/GenreAPITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/genre/create/CreateGenreUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/genre/delete/DeleteGenreUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/genre/retrieve/get/GetGenreByIdUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/genre/retrieve/list/ListGenreUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/genre/update/UpdateGenreUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/GenreMySQLGatewayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/CreateGenreRequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/GenreListResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/GenreResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/UpdateGenreRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/genre/GenreE2ETest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/genre/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/genre/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/utils/InstantUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/utils/InstantUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/category/CategoryUseCaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/usecases/CategoryUseCaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/MySQLCleanUpExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/MySQLCleanUpExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/category/CategoryE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/category/CategoryE2ETest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +180,7 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josem/IdeaProjects/admin-catalogo/infrastructure/src/test/java/org/dev/infrastructure/genre",
+    "last_opened_file_path": "C:/Users/josem/IdeaProjects/admin-catalogo/infrastructure/src/test/java/org/dev/infrastructure/e2e/genre",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -219,11 +189,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\e2e\genre" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\genre" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\application\genre" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\main\java\org\dev\infrastructure" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\main\java\org\dev\application\genre\retrieve\list" />
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\test\java\org\dev\application\genre" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\main\java\org\dev\application\genre\create" />
@@ -233,7 +203,7 @@
       <recent name="org.dev.infrastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.dev.infrastructure'">
+  <component name="RunManager" selected="Gradle.GenreE2ETest">
     <configuration name="CategoryE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -272,6 +242,30 @@
             <option value=":infrastructure:test" />
             <option value="--tests" />
             <option value="&quot;org.dev.infrastructure.api.GenreAPITest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GenreE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;org.dev.infrastructure.e2e.genre.GenreE2ETest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -330,28 +324,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="admin-catalogo:infrastructure [flywayValidate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/infrastructure" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="flywayValidate" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -360,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GenreE2ETest" />
         <item itemvalue="Gradle.Tests in 'org.dev.infrastructure'" />
         <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAValidSortAndDirection_whenCallsFindAll_shouldReturnOrdered" />
         <item itemvalue="Gradle.GenreAPITest" />
         <item itemvalue="Gradle.CategoryE2ETest" />
-        <item itemvalue="Gradle.admin-catalogo:infrastructure [flywayValidate]" />
       </list>
     </recent_temporary>
   </component>
