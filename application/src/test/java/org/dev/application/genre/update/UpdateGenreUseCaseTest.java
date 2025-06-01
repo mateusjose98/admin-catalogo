@@ -2,6 +2,11 @@ package org.dev.application.genre.update;
 
 
 import org.dev.application.UseCaseTest;
+import org.dev.domain.category.CategoryGateway;
+import org.dev.domain.category.CategoryID;
+import org.dev.domain.exception.NotificationException;
+import org.dev.domain.genre.Genre;
+import org.dev.domain.genre.GenreGateway;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -200,8 +205,8 @@ public class UpdateGenreUseCaseTest extends UseCaseTest {
         });
 
         // then
-        Assertions.assertEquals(expectedErrorCount, actualException.getErrors().size());
-        Assertions.assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorCount, actualException.getProblems().size());
+        Assertions.assertEquals(expectedErrorMessage, actualException.getProblems().get(0).message());
 
         Mockito.verify(genreGateway, times(1)).findById(eq(expectedId));
 
@@ -247,9 +252,9 @@ public class UpdateGenreUseCaseTest extends UseCaseTest {
         });
 
         // then
-        Assertions.assertEquals(expectedErrorCount, actualException.getErrors().size());
-        Assertions.assertEquals(expectedErrorMessageOne, actualException.getErrors().get(0).message());
-        Assertions.assertEquals(expectedErrorMessageTwo, actualException.getErrors().get(1).message());
+        Assertions.assertEquals(expectedErrorCount, actualException.getProblems().size());
+        Assertions.assertEquals(expectedErrorMessageOne, actualException.getProblems().get(0).message());
+        Assertions.assertEquals(expectedErrorMessageTwo, actualException.getProblems().get(1).message());
 
         Mockito.verify(genreGateway, times(1)).findById(eq(expectedId));
 

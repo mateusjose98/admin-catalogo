@@ -53,3 +53,6 @@ Tipos de caso de uso base: classes abstratas que carregam em seu nome a sua inte
 Framework, Gateways, Presenters, DB
 
 ![img_2.png](img/img_2.png)
+
+
+Swagger: http://localhost:8080/api/swagger-ui/index.html
