@@ -28,6 +28,31 @@ public class Genre extends AggregateRoot<GenreID> {
         return new Genre(anId, name, isActive, new ArrayList<>(), now, now, deletedAt);
     }
 
+    public static Genre with(
+            final GenreID anId,
+            final String aName,
+            final boolean isActive,
+            final List<CategoryID> categories,
+            final Instant aCreatedAt,
+            final Instant aUpdatedAt,
+            final Instant aDeletedAt
+    ) {
+        return new Genre(anId, aName, isActive, categories, aCreatedAt, aUpdatedAt, aDeletedAt);
+    }
+
+    public static Genre with(final Genre aGenre) {
+        return new Genre(
+                aGenre.id,
+                aGenre.name,
+                aGenre.active,
+                new ArrayList<>(aGenre.categories),
+                aGenre.createdAt,
+                aGenre.updatedAt,
+                aGenre.deletedAt
+        );
+    }
+
+
     protected Genre(
             final GenreID anId,
             final String aName,

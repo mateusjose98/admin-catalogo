@@ -1,4 +1,4 @@
-package org.dev.infrastructure.configuration.category;
+package org.dev.infrastructure.configuration.usecases;
 
 import org.dev.application.category.create.CreateCategoryUseCase;
 import org.dev.application.category.create.DefaultCreateCategoryUseCase;

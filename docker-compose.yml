@@ -13,10 +13,10 @@ services:
       - seccomp:unconfined
     ports:
       - 3306:3306
-#    volumes:
-#      - ../.docker/mysql:/var/lib/mysql:rw
+    volumes:
+      - ../.docker/mysql:/var/lib/mysql:rw
     networks:
       - adm_videos_services
 networks:
   adm_videos_services:
-#    external: true
+    external: true

@@ -6,11 +6,10 @@ import org.dev.infrastructure.category.models.UpdateCategoryRequest;
 import org.dev.infrastructure.category.persistence.CategoryRepository;
 import org.dev.infrastructure.e2e.MockDsl;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.DynamicPropertyRegistry;
-import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
@@ -32,15 +31,30 @@ public class CategoryE2ETest implements MockDsl {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    @Container
-    private static final MySQLContainer MYSQL_CONTAINER = new MySQLContainer("mysql:latest")
-            .withPassword("123456")
-            .withUsername("root")
-            .withDatabaseName("adm_videos");
+//    @Container // ORIGINAL QUE NÃO FUNCIONOU
+//    private static final MySQLContainer MYSQL_CONTAINER = new MySQLContainer("mysql:latest")
+//            .withPassword("123456")
+//            .withUsername("root")
+//            .withDatabaseName("adm_videos");
+//
+//    @DynamicPropertySource // sobrescrever propriedades dinamicamente que o spring setou
+//    public static void setDatasourceProperties(final DynamicPropertyRegistry registry) {
+//        registry.add("mysql.port", () -> MYSQL_CONTAINER.getMappedPort(3306));
+//    }
 
-    @DynamicPropertySource // sobrescrever propriedades dinamicamente que o spring setou
-    public static void setDatasourceProperties(final DynamicPropertyRegistry registry) {
-        registry.add("mysql.port", () -> MYSQL_CONTAINER.getMappedPort(3306));
+    @Container
+    static MySQLContainer<?> mySQLContainer = new MySQLContainer<>("mysql:8.0.33")
+            .withDatabaseName("adm_videos")
+            .withUsername("root")
+            .withPassword("123456");
+
+    @BeforeAll
+    static void startContainer() {
+        mySQLContainer.start();
+        System.setProperty("spring.datasource.url", mySQLContainer.getJdbcUrl());
+        System.setProperty("spring.datasource.username", mySQLContainer.getUsername());
+        System.setProperty("spring.datasource.password", mySQLContainer.getPassword());
+        System.setProperty("mysql.port", String.valueOf(mySQLContainer.getMappedPort(3306)));
     }
 
     @Override
@@ -50,7 +64,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filmes";
@@ -71,7 +85,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToNavigateToAllCategories() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         givenACategory("Filmes", null, true);
@@ -112,7 +126,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToSearchBetweenAllCategories() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         givenACategory("Filmes", null, true);
@@ -130,7 +144,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToSortAllCategoriesByDescriptionDesc() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         givenACategory("Filmes", "C", true);
@@ -150,7 +164,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToGetACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filmes";
@@ -171,7 +185,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundCategory() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var aRequest = get("/categories/123")
@@ -186,7 +200,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToUpdateACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var actualId = givenACategory("Movies", null, true);
@@ -212,7 +226,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToInactivateACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filmes";
@@ -238,7 +252,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToActivateACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var expectedName = "Filmes";
@@ -264,7 +278,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldBeAbleToDeleteACategoryByItsIdentifier() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         final var actualId = givenACategory("Filmes", null, true);
@@ -277,7 +291,7 @@ public class CategoryE2ETest implements MockDsl {
 
     @Test
     public void asACatalogAdminIShouldNotSeeAnErrorByDeletingANotExistentCategory() throws Exception {
-        Assertions.assertTrue(MYSQL_CONTAINER.isRunning());
+        Assertions.assertTrue(mySQLContainer.isRunning());
         Assertions.assertEquals(0, categoryRepository.count());
 
         deleteACategory(CategoryID.from("12313"))
