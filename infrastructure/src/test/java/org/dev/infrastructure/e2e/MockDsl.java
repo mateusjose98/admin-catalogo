@@ -1,8 +1,13 @@
 package org.dev.infrastructure.e2e;
 
 import org.dev.domain.Identifier;
+import org.dev.domain.castmember.CastMemberID;
+import org.dev.domain.castmember.CastMemberType;
 import org.dev.domain.category.CategoryID;
 import org.dev.domain.genre.GenreID;
+import org.dev.infrastructure.castmember.models.CastMemberResponse;
+import org.dev.infrastructure.castmember.models.CreateCastMemberRequest;
+import org.dev.infrastructure.castmember.models.UpdateCastMemberRequest;
 import org.dev.infrastructure.category.models.CategoryResponse;
 import org.dev.infrastructure.category.models.CreateCategoryRequest;
 import org.dev.infrastructure.category.models.UpdateCategoryRequest;
@@ -112,7 +117,47 @@ public interface MockDsl {
 
         return actualId;
     }
+    /**
+     * Cast Member
+     */
+    default ResultActions deleteACastMember(final CastMemberID anId) throws Exception {
+        return this.delete("/cast_members/", anId);
+    }
 
+    default CastMemberID givenACastMember(final String aName, final CastMemberType aType) throws Exception {
+        final var aRequestBody = new CreateCastMemberRequest(aName, aType);
+        final var actualId = this.given("/cast_members", aRequestBody);
+        return CastMemberID.from(actualId);
+    }
+
+    default ResultActions givenACastMemberResult(final String aName, final CastMemberType aType) throws Exception {
+        final var aRequestBody = new CreateCastMemberRequest(aName, aType);
+        return this.givenResult("/cast_members", aRequestBody);
+    }
+
+    default ResultActions listCastMembers(final int page, final int perPage) throws Exception {
+        return listCastMembers(page, perPage, "", "", "");
+    }
+
+    default ResultActions listCastMembers(final int page, final int perPage, final String search) throws Exception {
+        return listCastMembers(page, perPage, search, "", "");
+    }
+
+    default ResultActions listCastMembers(final int page, final int perPage, final String search, final String sort, final String direction) throws Exception {
+        return this.list("/cast_members", page, perPage, search, sort, direction);
+    }
+
+    default CastMemberResponse retrieveACastMember(final CastMemberID anId) throws Exception {
+        return this.retrieve("/cast_members/", anId, CastMemberResponse.class);
+    }
+
+    default ResultActions retrieveACastMemberResult(final CastMemberID anId) throws Exception {
+        return this.retrieveResult("/cast_members/", anId);
+    }
+
+    default ResultActions updateACastMember(final CastMemberID anId, final String aName, final CastMemberType aType) throws Exception {
+        return this.update("/cast_members/", anId, new UpdateCastMemberRequest(aName, aType));
+    }
     private ResultActions givenResult(final String url, final Object body) throws Exception {
         final var aRequest = post(url)
 //                .with(ApiTest.ADMIN_JWT)

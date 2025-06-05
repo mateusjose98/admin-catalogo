@@ -5,40 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f86f2a-1e9c-4620-a4bb-ccdc36b622a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/create/CreateCastMemberCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/create/CreateCastMemberOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/create/CreateCastMemberUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/create/DefaultCreateCastMemberUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/delete/DefaultDeleteCastMemberUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/delete/DeleteCastMemberUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/retrieve/get/CastMemberOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/retrieve/get/DefaultGetCastMemberByIdUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/retrieve/get/GetCastMemberByIdUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/retrieve/list/CastMemberListOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/retrieve/list/DefaultListCastMembersUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/retrieve/list/ListCastMembersUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/update/DefaultUpdateCastMemberUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/update/UpdateCastMemberCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/update/UpdateCastMemberOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/dev/application/castmember/update/UpdateCastMemberUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/Fixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/castmember/create/CreateCastMemberUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/castmember/delete/DeleteCastMemberUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/castmember/retrieve/get/GetCastMemberByIdUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/castmember/retrieve/list/ListCastMembersUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/castmember/update/UpdateCastMemberUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/castmember/CastMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/castmember/CastMemberGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/castmember/CastMemberID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/castmember/CastMemberType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/dev/domain/castmember/CastMemberValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/org/dev/domain/UnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/org/dev/domain/castmember/CastMemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/CastMemberAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/controllers/CastMemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/CastMemberMySQLGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/CastMemberListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/CastMemberResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/CreateCastMemberRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/UpdateCastMemberRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/persistence/CastMemberJpaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/persistence/CastMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/presenter/CastMemberPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/usecases/CastMemberUseCaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/utils/HashingUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/U3__Create_CastMember_Aggregate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V3__Create_CastMember_Aggregate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/Fixture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/create/CreateCastMemberUseCaseIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/delete/DeleteCastMemberUseCaseIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/retrieve/get/GetCastMemberByIdUseCaseIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/update/UpdateCastMemberUseCaseIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/castmember/CastMemberE2ETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/api/CastMemberAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/CastMemberMySQLGatewayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/CastMemberListResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/CastMemberResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/CreateCastMemberRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/UpdateCastMemberRequestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/org/dev/application/genre/update/UpdateGenreUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/org/dev/application/genre/update/UpdateGenreUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/api/CategoryAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/api/CategoryAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/api/GenreAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/api/GenreAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/CategoryMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/CategoryMySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CategoryListResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/CategoryListResponseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CategoryResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/CategoryResponseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CreateCategoryRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/CreateCategoryRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/UpdateCategoryRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/UpdateCategoryRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/persistence/CategoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/persistence/CategoryRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/GenreMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/GenreMySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/CreateGenreRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/CreateGenreRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/GenreListResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/GenreListResponseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/GenreResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/GenreResponseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/UpdateGenreRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/UpdateGenreRequestTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +275,7 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josem/IdeaProjects/admin-catalogo/application/src/test/java/org/dev/application",
+    "last_opened_file_path": "C:/Users/josem/IdeaProjects/admin-catalogo/infrastructure/src/test/java/org/dev/infrastructure/infra",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -275,11 +284,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\test\java\org\dev\application" />
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\main\java\org\dev\application" />
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\domain\src\test\java\org\dev\domain" />
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\domain\src\main\java\org\dev\domain" />
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\e2e\genre" />
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\infra" />
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\infra\category" />
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\e2e" />
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure" />
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\application" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\main\java\org\dev\application\genre\create" />
@@ -289,34 +298,11 @@
       <recent name="org.dev.infrastructure" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.dev.infrastructure" />
       <recent name="org.dev.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.dev.application'">
-    <configuration name="CreateCastMemberUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;org.dev.application.castmember.create.CreateCastMemberUseCaseTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.admin-catalogo:infrastructure [flywayMigrate]">
     <configuration name="Tests in 'org.dev.application'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -365,7 +351,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="admin-catalogo [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="admin-catalogo [flywayMigrate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -376,7 +362,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildDependents" />
+            <option value="flywayMigrate" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -387,10 +373,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="admin-catalogo [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="admin-catalogo:infrastructure [flywayMigrate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/infrastructure" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -398,7 +384,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="flywayMigrate" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -415,13 +401,21 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.admin-catalogo:infrastructure [flywayMigrate]" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Gradle.admin-catalogo [flywayMigrate]" />
         <item itemvalue="Gradle.Tests in 'org.dev.application'" />
         <item itemvalue="Gradle.Tests in 'org.dev.application.castmember'" />
-        <item itemvalue="Gradle.CreateCastMemberUseCaseTest" />
-        <item itemvalue="Gradle.admin-catalogo [clean]" />
-        <item itemvalue="Gradle.admin-catalogo [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
