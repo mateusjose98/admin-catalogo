@@ -5,49 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f86f2a-1e9c-4620-a4bb-ccdc36b622a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/CastMemberAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/api/controllers/CastMemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/CastMemberMySQLGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/CastMemberListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/CastMemberResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/CreateCastMemberRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/models/UpdateCastMemberRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/persistence/CastMemberJpaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/persistence/CastMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/castmember/presenter/CastMemberPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/configuration/usecases/CastMemberUseCaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/dev/infrastructure/utils/HashingUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/U3__Create_CastMember_Aggregate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V3__Create_CastMember_Aggregate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/Fixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/create/CreateCastMemberUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/delete/DeleteCastMemberUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/retrieve/get/GetCastMemberByIdUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/application/castmember/update/UpdateCastMemberUseCaseIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/castmember/CastMemberE2ETest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/api/CastMemberAPITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/CastMemberMySQLGatewayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/CastMemberListResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/CastMemberResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/CreateCastMemberRequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/castmember/models/UpdateCastMemberRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/api/CategoryAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/api/CategoryAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/api/GenreAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/api/GenreAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/CategoryMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/CategoryMySQLGatewayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CategoryListResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/CategoryListResponseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CategoryResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/CategoryResponseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/CreateCategoryRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/CreateCategoryRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/models/UpdateCategoryRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/models/UpdateCategoryRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/category/persistence/CategoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/category/persistence/CategoryRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/e2e/MockDsl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/GenreMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/GenreMySQLGatewayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/CreateGenreRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/CreateGenreRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/GenreListResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/GenreListResponseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/GenreResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/GenreResponseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/genre/models/UpdateGenreRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/org/dev/infrastructure/infra/genre/models/UpdateGenreRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,69 +47,27 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="admin-catalogo" type="f1a62948:ProjectNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
+                <item name="infrastructure" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="application" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin-catalogo" type="f1a62948:ProjectNode" />
-                <item name="domain" type="2d1252cf:ModuleNode" />
+                <item name="flyway" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -194,101 +112,101 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Gradle.Build admin-catalogo.executor": "Run",
-    "Gradle.CastMemberTest.executor": "Run",
-    "Gradle.CategoryAPITest.executor": "Run",
-    "Gradle.CategoryAPITest.givenACommandWithInvalidID_whenCallsUpdateCategory_shouldReturnNotFoundException.executor": "Debug",
-    "Gradle.CategoryAPITest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnNotification.executor": "Run",
-    "Gradle.CategoryAPITest.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId.executor": "Debug",
-    "Gradle.CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues.executor": "Run",
-    "Gradle.CategoryE2ETest.executor": "Run",
-    "Gradle.CategoryE2ETest.testWorks.executor": "Run",
-    "Gradle.CategoryMySQLGateway.executor": "Run",
-    "Gradle.CategoryMySQLGatewayTest.executor": "Run",
-    "Gradle.CategoryMySQLGatewayTest.givenAValidCategory_whenCallsCreate_shouldReturnANewCategory.executor": "Run",
-    "Gradle.CategoryRepositoryTest.executor": "Run",
-    "Gradle.CategoryTest.executor": "Run",
-    "Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated.executor": "Run",
-    "Gradle.CategoryTest.givenAValidCategory_whenCallUpdate_thenReturnCategoryUpdated.executor": "Run",
-    "Gradle.CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory.executor": "Run",
-    "Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
-    "Gradle.CategoryTest.givenNonExistentFileName_whenAttemptFileOpen_thenNullPointerException.executor": "Run",
-    "Gradle.CreateCastMemberUseCaseTest.executor": "Run",
-    "Gradle.CreateCategoryUseCaseIT.executor": "Run",
-    "Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId.executor": "Run",
-    "Gradle.CreateCategoryUseCaseTest (1).executor": "Run",
-    "Gradle.CreateCategoryUseCaseTest.executor": "Run",
-    "Gradle.DeleteCategoryUseCaseIT.executor": "Run",
-    "Gradle.DeleteCategoryUseCaseTest.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.GenreAPITest.executor": "Run",
-    "Gradle.GenreE2ETest.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAValidSortAndDirection_whenCallsFindAll_shouldReturnOrdered.executor": "Debug",
-    "Gradle.GenreTest.executor": "Run",
-    "Gradle.GenreTest.givenAnActiveGenre_whenCallDeactivate_shouldReceiveOK.executor": "Run",
-    "Gradle.GetCategoryByIdUseCaseIT.executor": "Run",
-    "Gradle.GetCategoryByIdUseCaseTest.executor": "Run",
-    "Gradle.GetCategoryByIdUseCaseTest.givenAValidId_whenCallsGetCategory_shouldReturnCategory.executor": "Run",
-    "Gradle.ListCategoriesUseCaseIT.executor": "Run",
-    "Gradle.ListCategoriesUseCaseIT.givenAValidSortAndDirection_whenCallsListCategories_thenShouldReturnCategoriesOrdered.executor": "Run",
-    "Gradle.ListCategoriesUseCaseTest.executor": "Run",
-    "Gradle.Tests in 'admin-catalogo.application.test'.executor": "Run",
-    "Gradle.Tests in 'admin-catalogo.domain.test'.executor": "Run",
-    "Gradle.Tests in 'admin-catalogo.infrastructure.test'.executor": "Run",
-    "Gradle.Tests in 'org.dev.application'.executor": "Run",
-    "Gradle.Tests in 'org.dev.application.castmember'.executor": "Run",
-    "Gradle.Tests in 'org.dev.domain'.executor": "Run",
-    "Gradle.Tests in 'org.dev.infrastructure'.executor": "Run",
-    "Gradle.Tests in 'org.dev.infrastructure.application.category'.executor": "Run",
-    "Gradle.Tests in 'org.dev.infrastructure.category.models'.executor": "Run",
-    "Gradle.UpdateCategoryUseCaseIT.executor": "Run",
-    "Gradle.UpdateCategoryUseCaseTest.executor": "Run",
-    "Gradle.UpdateCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId.executor": "Run",
-    "Gradle.UpdateCategoryUseCaseTest.givenAValidInactivateCommand_whenCallsUpdateCategory_shouldReturnInactiveCategoryId.executor": "Run",
-    "Gradle.admin-catalogo [:org.dev.Main.main()].executor": "Run",
-    "Gradle.admin-catalogo [bootJar].executor": "Run",
-    "Gradle.admin-catalogo [buildDependents].executor": "Run",
-    "Gradle.admin-catalogo [buildNeeded].executor": "Run",
-    "Gradle.admin-catalogo [clean].executor": "Run",
-    "Gradle.admin-catalogo [flywayClean].executor": "Run",
-    "Gradle.admin-catalogo [flywayMigrate].executor": "Run",
-    "Gradle.admin-catalogo [flywayRepair].executor": "Run",
-    "Gradle.admin-catalogo:application [assemble].executor": "Run",
-    "Gradle.admin-catalogo:application [buildDependents].executor": "Run",
-    "Gradle.admin-catalogo:application [buildNeeded].executor": "Run",
-    "Gradle.admin-catalogo:application [build].executor": "Run",
-    "Gradle.admin-catalogo:application [clean].executor": "Run",
-    "Gradle.admin-catalogo:domain [:domain:org.dev.domain.Main.main()].executor": "Run",
-    "Gradle.admin-catalogo:domain [build].executor": "Run",
-    "Gradle.admin-catalogo:infrastructure [:infrastructure:org.dev.infrastructure.Main.main()].executor": "Run",
-    "Gradle.admin-catalogo:infrastructure [build].executor": "Run",
-    "Gradle.admin-catalogo:infrastructure [flywayInfo].executor": "Run",
-    "Gradle.admin-catalogo:infrastructure [flywayMigrate].executor": "Run",
-    "Gradle.admin-catalogo:infrastructure [flywayValidate].executor": "Run",
-    "Gradle.admin-catalogo:infrastructure [run].executor": "Run",
-    "JUnit.CreateCastMemberUseCaseTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josem/IdeaProjects/admin-catalogo/infrastructure/src/test/java/org/dev/infrastructure/infra",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build admin-catalogo.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CastMemberTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryAPITest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryAPITest.givenACommandWithInvalidID_whenCallsUpdateCategory_shouldReturnNotFoundException.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CategoryAPITest.givenAInvalidName_whenCallsCreateCategory_thenShouldReturnNotification.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryAPITest.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.CategoryE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCategoryWithValidValues.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryE2ETest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryE2ETest.testWorks.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMySQLGateway.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMySQLGatewayTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMySQLGatewayTest.givenAValidCategory_whenCallsCreate_shouldReturnANewCategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAValidCategory_whenCallUpdate_thenReturnCategoryUpdated.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.givenNonExistentFileName_whenAttemptFileOpen_thenNullPointerException.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCastMemberUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseIT.givenAValidCommand_whenCallsCreateCategory_shouldReturnCategoryId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCategoryUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DeleteCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreAPITest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAValidSortAndDirection_whenCallsFindAll_shouldReturnOrdered.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.GenreTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreTest.givenAnActiveGenre_whenCallDeactivate_shouldReceiveOK.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetCategoryByIdUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetCategoryByIdUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetCategoryByIdUseCaseTest.givenAValidId_whenCallsGetCategory_shouldReturnCategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListCategoriesUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListCategoriesUseCaseIT.givenAValidSortAndDirection_whenCallsListCategories_thenShouldReturnCategoriesOrdered.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListCategoriesUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'admin-catalogo.application.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'admin-catalogo.domain.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'admin-catalogo.infrastructure.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.application'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.application.castmember'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.domain'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.infrastructure'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.infrastructure.application.category'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'org.dev.infrastructure.category.models'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateCategoryUseCaseTest.givenAValidInactivateCommand_whenCallsUpdateCategory_shouldReturnInactiveCategoryId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [:org.dev.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [buildNeeded].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [flywayClean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [flywayMigrate].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo [flywayRepair].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:application [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:application [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:application [buildNeeded].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:application [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:application [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:domain [:domain:org.dev.domain.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:domain [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [:infrastructure:org.dev.infrastructure.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [flywayInfo].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [flywayMigrate].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [flywayValidate].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.admin-catalogo:infrastructure [run].executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CreateCastMemberUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josem/IdeaProjects/admin-catalogo/infrastructure/src/main/resources/db/migration&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\main\resources\db\migration" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\infra" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\infra\category" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\e2e" />
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure" />
-      <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\infrastructure\src\test\java\org\dev\infrastructure\application" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\josem\IdeaProjects\admin-catalogo\application\src\main\java\org\dev\application\genre\create" />
@@ -302,7 +220,20 @@
       <recent name="org.dev.application" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.admin-catalogo:infrastructure [flywayMigrate]">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dev.infrastructure.Main" />
+      <module name="admin-catalogo.infrastructure.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dev.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests in 'org.dev.application'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -317,30 +248,6 @@
             <option value=":application:test" />
             <option value="--tests" />
             <option value="&quot;org.dev.application.*&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'org.dev.application.castmember'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;org.dev.application.castmember.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -411,11 +318,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.admin-catalogo:infrastructure [flywayMigrate]" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Gradle.admin-catalogo [flywayMigrate]" />
         <item itemvalue="Gradle.Tests in 'org.dev.application'" />
-        <item itemvalue="Gradle.Tests in 'org.dev.application.castmember'" />
       </list>
     </recent_temporary>
   </component>

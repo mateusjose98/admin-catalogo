@@ -39,6 +39,33 @@ Regras de valudação [Gênero]:
 - Ativar/Inativar
 
 
+Regras de valudação [Membro]:
+- Nome - preenchimento obrigatório, mín 3, max 255
+- Tipo - obrigatório
+
+
+Regras de valudação [Vídeo]:
+- Título obrigatório, máx. 255 caractere.
+- Descrição obrigatória
+- Ano de lançamento obrigatório
+- Duração
+- Já estreou
+- Publicado
+- Autidoria
+- Rating  obrigatório
+- Thumb(imagem)
+- Meia thumb(imagem)
+- Banner(imagem)
+- Trailer(midia)
+- Midia(url original, url encodada, controle de status)
+
+Relacionamento com Categoria (várias)
+
+Relacionamento com Gênero(várias)
+
+Relacionamento com Membros de elenco (várias)
+
+
 ---
 *Camada de Aplicação* 
 
@@ -54,5 +81,9 @@ Framework, Gateways, Presenters, DB
 
 ![img_2.png](img/img_2.png)
 
+
+Banco de dados:
+
+![img_1.png](img_1.png)
 
 Swagger: http://localhost:8080/api/swagger-ui/index.html
